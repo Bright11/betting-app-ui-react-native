@@ -1,11 +1,22 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Pressable, SafeAreaView} from 'react-native';
 import React from 'react';
+import Mydropdwon from './Mydropdwon';
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView>
+      <View>
+        <Pressable>
+          <Text>Regular bet</Text>
+        </Pressable>
+        <Pressable>
+          <Text>customized bet</Text>
+        </Pressable>
+      </View>
+      <View>
+        <Mydropdwon />
+      </View>
+    </SafeAreaView>
   );
 };
 
