@@ -1,6 +1,16 @@
-import {StyleSheet, Text, View, Pressable} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Pressable,
+  SafeAreaView,
+  ImageBackground,
+  Image,
+} from 'react-native';
 import React, {useLayoutEffect} from 'react';
 import betwaystyle from './betwaystyle';
+import {FlatList} from 'react-native-gesture-handler';
+import socertype from './socertype';
 
 const BetwayScreen = ({navigation}) => {
   useLayoutEffect(() => {
@@ -33,9 +43,28 @@ const BetwayScreen = ({navigation}) => {
     });
   }, [navigation]);
   return (
-    <View>
-      <Text>BetwayScreen</Text>
-    </View>
+    <SafeAreaView>
+      <View style={betwaystyle.socertopview}>
+        <FlatList
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          data={socertype}
+          renderItem={({item}) => (
+            <View style={betwaystyle.socercatviewholder}>
+              <Text style={betwaystyle.socertopname}>{item.name}</Text>
+            </View>
+          )}
+        />
+      </View>
+      {/* <ImageBackground
+        source={require('./socerimg/background.jpg')}></ImageBackground> */}
+      <View style={betwaystyle.advertview}>
+        <Image
+          style={betwaystyle.advertimg}
+          source={require('./socerimg/background.jpg')}
+        />
+      </View>
+    </SafeAreaView>
   );
 };
 

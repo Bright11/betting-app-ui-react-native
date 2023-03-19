@@ -32,6 +32,25 @@ const betwaystyle = StyleSheet.create({
     fontWeight: '700',
     fontSize: 14,
   },
+  //   top socer cat
+  socertopview: {
+    backgroundColor: '#333333',
+  },
+  socercatviewholder: {
+    margin: 10,
+  },
+  socertopname: {
+    color: 'white',
+    fontFamily: 'Montserrat-Medium',
+    fontWeight: '700',
+    fontSize: 18,
+  },
+  advertview: {
+    marginTop: 10,
+  },
+  advertimg: {
+    width: '100%',
+  },
 });
 
 export default betwaystyle;
