@@ -11,6 +11,9 @@ import React, {useLayoutEffect} from 'react';
 import betwaystyle from './betwaystyle';
 import {FlatList} from 'react-native-gesture-handler';
 import socertype from './socertype';
+import Mydropdwon from './Mydropdwon';
+import BetType from './BetType';
+import Matches from './Matches';
 
 const BetwayScreen = ({navigation}) => {
   useLayoutEffect(() => {
@@ -63,6 +66,45 @@ const BetwayScreen = ({navigation}) => {
           style={betwaystyle.advertimg}
           source={require('./socerimg/background.jpg')}
         />
+      </View>
+      <View>
+        <FlatList
+          horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          data={socertype}
+          renderItem={({item}) => (
+            <View style={betwaystyle.socercatimgviewholder}>
+              <Image style={betwaystyle.socercatimg} source={item.image} />
+              <Text style={betwaystyle.socertopnameimage}>{item.name}</Text>
+            </View>
+          )}
+        />
+      </View>
+      <View style={betwaystyle.hightbetview}>
+        <View style={betwaystyle.hightlightview}>
+          <Pressable>
+            <Text style={betwaystyle.hightlighttext}>Hightlight</Text>
+          </Pressable>
+          <Pressable>
+            <Text style={betwaystyle.hightlighttext}>Upcoming games</Text>
+          </Pressable>
+        </View>
+        <View style={betwaystyle.livenowview}>
+          <Pressable>
+            <Text style={betwaystyle.livenowtext}>Live Now</Text>
+          </Pressable>
+        </View>
+      </View>
+      <View style={betwaystyle.leagueview}>
+        <View style={betwaystyle.leaguedropdown}>
+          <Mydropdwon />
+        </View>
+        <View style={betwaystyle.leaguedropdown}>
+          <BetType />
+        </View>
+      </View>
+      <View>
+        <Matches />
       </View>
     </SafeAreaView>
   );

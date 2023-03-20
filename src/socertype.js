@@ -17,12 +17,12 @@ const socertype = [
   {
     id: 4,
     name: 'Live',
-    image: require('./socerimg/canddy.jpg'),
+    image: require('./socerimg/360.jpg'),
   },
   {
     id: 5,
     name: 'Lucky',
-    image: require('./socerimg/canddy.jpg'),
+    image: require('./socerimg/lucky.jpg'),
   },
   {
     id: 6,

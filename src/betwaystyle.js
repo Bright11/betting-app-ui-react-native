@@ -51,6 +51,64 @@ const betwaystyle = StyleSheet.create({
   advertimg: {
     width: '100%',
   },
+  socercatimgviewholder: {
+    flexDirection: 'column',
+    margin: 10,
+    alignItems: 'center',
+  },
+  socercatimg: {
+    width: 50,
+    height: 50,
+    borderRadius: 100,
+  },
+  socertopnameimage: {
+    color: 'black',
+    fontFamily: 'Montserrat-Medium',
+    fontWeight: '700',
+    fontSize: 20,
+  },
+  hightbetview: {
+    flexDirection: 'row',
+    // justifyContent: 'space-evenly',
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  hightlightview: {
+    flexDirection: 'row',
+    gap: 8,
+    backgroundColor: '#31AA54',
+    paddingTop: 20,
+    paddingBottom: 20,
+    width: '80%',
+  },
+  hightlighttext: {
+    color: 'white',
+    fontFamily: 'Montserrat-Medium',
+    fontWeight: '700',
+    letterSpacing: 1,
+    fontSize: 20,
+  },
+  livenowview: {
+    backgroundColor: '#F8FF13',
+    width: '40%',
+    paddingTop: 20,
+    paddingBottom: 20,
+    //alignItems: 'center',
+  },
+  livenowtext: {
+    color: 'black',
+    fontFamily: 'Montserrat-Medium',
+    fontWeight: '700',
+    letterSpacing: 1,
+    fontSize: 16,
+  },
+  leagueview: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  leaguedropdown: {
+    width: '50%',
+  },
 });
 
 export default betwaystyle;

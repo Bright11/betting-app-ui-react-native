@@ -2,7 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React, {useState} from 'react';
 import {Dropdown} from 'react-native-element-dropdown';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-const Mydropdwon = () => {
+const BetType = () => {
   const [value, setValue] = useState(null);
   const data = [
     {label: 'Item 1', value: '1'},
@@ -26,7 +26,7 @@ const Mydropdwon = () => {
       maxHeight={300}
       labelField="label"
       valueField="value"
-      placeholder="League (0)"
+      placeholder="BetType"
       searchPlaceholder="Search..."
       value={value}
       onChange={item => {
@@ -39,7 +39,7 @@ const Mydropdwon = () => {
   );
 };
 
-export default Mydropdwon;
+export default BetType;
 
 const styles = StyleSheet.create({
   dropdown: {
