@@ -46,7 +46,7 @@ const BetwayScreen = ({navigation}) => {
     });
   }, [navigation]);
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1}}>
       <View style={betwaystyle.socertopview}>
         <FlatList
           horizontal={true}
@@ -83,7 +83,7 @@ const BetwayScreen = ({navigation}) => {
       <View style={betwaystyle.hightbetview}>
         <View style={betwaystyle.hightlightview}>
           <Pressable>
-            <Text style={betwaystyle.hightlighttext}>Hightlight</Text>
+            <Text style={betwaystyle.hightlighttext}>Highlight</Text>
           </Pressable>
           <Pressable>
             <Text style={betwaystyle.hightlighttext}>Upcoming games</Text>

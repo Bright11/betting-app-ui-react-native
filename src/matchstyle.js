@@ -1,5 +1,8 @@
 import {StyleSheet} from 'react-native';
 const matchstyle = StyleSheet.create({
+  holderview: {
+    flexDirection: 'column',
+  },
   dateview: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -15,6 +18,20 @@ const matchstyle = StyleSheet.create({
   },
   dateviewholder: {
     flexDirection: 'row',
+  },
+  clubsview: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 5,
+  },
+  clubpress: {
+    backgroundColor: '#7BB661',
+    padding: 10,
+  },
+  clubtextname: {
+    color: 'white',
+    fontFamily: 'Montserrat-Medium',
+    fontWeight: '700',
   },
 });
 
