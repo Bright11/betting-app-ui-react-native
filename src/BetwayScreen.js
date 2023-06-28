@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import React, {useLayoutEffect} from 'react';
 import betwaystyle from './betwaystyle';
-import {FlatList} from 'react-native-gesture-handler';
+import {FlatList, ScrollView} from 'react-native-gesture-handler';
 import socertype from './socertype';
 import Mydropdwon from './Mydropdwon';
 import BetType from './BetType';
@@ -47,8 +47,10 @@ const BetwayScreen = ({navigation}) => {
   }, [navigation]);
   return (
     <SafeAreaView style={{flex: 1}}>
+      <ScrollView>
       <View style={betwaystyle.socertopview}>
         <FlatList
+        //scrollEnabled={true}
           horizontal={true}
           showsHorizontalScrollIndicator={false}
           data={socertype}
@@ -103,9 +105,10 @@ const BetwayScreen = ({navigation}) => {
           <BetType />
         </View>
       </View>
-      <View>
+      <View style={betwaystyle.betmatchvie}>
         <Matches />
       </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };

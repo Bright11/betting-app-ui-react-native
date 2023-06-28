@@ -6,8 +6,9 @@ import matchstyle from './matchstyle';
 
 const Matches = () => {
   return (
-    <View>
+    <View style={{ flex:1 }} >
       <FlatList
+        nestedScrollEnabled={true}
         data={fixgame}
         renderItem={({item}) => (
           <View style={matchstyle.holderview}>

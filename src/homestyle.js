@@ -3,6 +3,7 @@ const homestyle = StyleSheet.create({
   homesafeview: {
     flex: 1,
     backgroundColor: '#241D1D',
+    height:"100%"
   },
   regularview: {
     backgroundColor: '#E3AC26',
